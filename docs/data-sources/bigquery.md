@@ -6,7 +6,7 @@ title: "BigQuery"
 
 On the BigQuery Data Source setup screen, the **Project ID** and **JSON Key File** are always required. You can get a key file when you create a new service account with Google (details below).
 
-![](/img/docs/gitbook/bigquery_mandatories.PNG)
+![](/img/docs/gitbook/bigquery_mandatories.png)
 
 - If your database schema exceeds 5000 tokens, untick the **Load Schema** box to stop Fanar from loading it to the Query Editor screen. Many browsers will slow down or crash if the schema is too big.
 

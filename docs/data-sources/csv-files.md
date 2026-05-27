@@ -182,12 +182,8 @@ It's rare to see errors once the data is successfully added to Fanar in step 3. 
 
 ## My data is jumbled
 
-![Example of jumbled data]()
-
 Your CSV file is not formatted correctly. Common causes are CSV files with unescaped commas. Also confirm that the file is _valid_ CSV. Some systems export "CSV" files that are actually semicolon-delimited.
 
 ## I only see one row of data and it's all HTML
-
-![Example of HTML data]()
 
 Your URL from step 2 returns an HTML file instead of a CSV. Follow the instructions for common hosting providers in step 2. Otherwise, find the URL that lets you directly download the CSV file. -->

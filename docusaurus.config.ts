@@ -11,17 +11,20 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://lionjashari.github.io',
+  url: 'https://fanar-analytics-demo.github.io',
   baseUrl: '/fanar-documentation/',
-  organizationName: 'lionjashari',
+  organizationName: 'Fanar-Analytics-Demo',
   projectName: 'fanar-documentation',
   trailingSlash: false,
 
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
 
   markdown: {
     format: 'detect',
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'throw',
+    },
   },
 
   i18n: {
@@ -36,7 +39,7 @@ const config: Config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
-          editUrl: 'https://github.com/lionjashari/fanar-documentation/tree/main/',
+          editUrl: 'https://github.com/Fanar-Analytics-Demo/fanar-documentation/tree/main/',
         },
         blog: false,
         theme: {
@@ -70,7 +73,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          href: 'https://github.com/lionjashari/fanar-documentation',
+          href: 'https://github.com/Fanar-Analytics-Demo/fanar-documentation',
           label: 'GitHub',
           position: 'right',
         },

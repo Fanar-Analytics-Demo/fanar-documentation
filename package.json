@@ -5,6 +5,7 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "import:redash-kb": "node scripts/import-redash-kb.mjs",
+    "fix:image-case": "node scripts/fix-image-case.mjs",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",

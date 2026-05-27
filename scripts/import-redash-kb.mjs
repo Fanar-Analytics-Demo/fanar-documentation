@@ -183,6 +183,7 @@ function main() {
     fs.mkdirSync(STATIC_IMG, { recursive: true });
     fs.cpSync(srcImages, STATIC_IMG, { recursive: true });
     console.log(`Copied images to ${STATIC_IMG}`);
+    console.log("Run: node scripts/fix-image-case.mjs");
   }
 
   console.log(`Imported ${imported.length} documents into ${DOCS_DIR}`);

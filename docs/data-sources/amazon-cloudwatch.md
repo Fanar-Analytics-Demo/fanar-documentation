@@ -55,7 +55,7 @@ To learn more about the CloudWatch ad-hoc query language you can study the follo
 
 ## Querying CloudWatch Logs Insights
 
-These instructions assume you are familiar with the CloudWatch Logs Insights ad-hoc query language. To make exploring your data easier the schema browser will show which **Log Groups** and **@Fields** you can query. Your query text must be written in [YAML Syntax]() (not SQL). Your query can include the following keys:
+These instructions assume you are familiar with the CloudWatch Logs Insights ad-hoc query language. To make exploring your data easier the schema browser will show which **Log Groups** and **@Fields** you can query. Your query text must be written in [YAML Syntax](https://yaml.org/spec/) (not SQL). Your query can include the following keys:
 
 | Key             | Type                  |
 | --------------- | --------------------- |

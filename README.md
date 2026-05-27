@@ -2,7 +2,7 @@
 
 Documentation site for [Fanar](https://github.com/lionjashari/fanar), built with [Docusaurus](https://docusaurus.io/).
 
-**Published site:** https://lionjashari.github.io/fanar-documentation/
+**Published site:** https://fanar-analytics-demo.github.io/fanar-documentation/
 
 ## Local development
 
