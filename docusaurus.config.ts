@@ -11,8 +11,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://fanar-analytics-demo.github.io',
-  baseUrl: '/fanar-documentation/',
+  url: 'https://docs.fanar.tech',
+  baseUrl: '/',
   organizationName: 'Fanar-Analytics-Demo',
   projectName: 'fanar-documentation',
   trailingSlash: false,

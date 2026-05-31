@@ -2,7 +2,7 @@
 
 Documentation site for [Fanar](https://github.com/lionjashari/fanar), built with [Docusaurus](https://docusaurus.io/).
 
-**Published site:** https://fanar-analytics-demo.github.io/fanar-documentation/
+**Published site:** https://docs.fanar.tech
 
 ## Local development
 
@@ -13,7 +13,7 @@ npm install
 npm start
 ```
 
-Open http://localhost:3000/fanar-documentation/
+Open http://localhost:3000/
 
 Production build:
 
