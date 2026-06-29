@@ -28,5 +28,5 @@ there is no separate permission system to manage.
   Layer**; you query it like any other source.
 - Every query is automatically scoped to your organization.
 
-Continue with [Creating a Topic](./creating-a-topic) and
-[Querying the Semantic Layer](./querying-the-semantic-layer).
+Continue with [Creating a Topic](./creating-a-topic.md) and
+[Querying the Semantic Layer](./querying-the-semantic-layer.md).
