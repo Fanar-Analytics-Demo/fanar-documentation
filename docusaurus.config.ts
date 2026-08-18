@@ -17,7 +17,8 @@ const config: Config = {
   projectName: 'fanar-documentation',
   trailingSlash: false,
 
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
+  onBrokenAnchors: 'warn',
 
   markdown: {
     format: 'detect',
@@ -31,6 +32,47 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        // The docs were reorganised around what people are doing rather than
+        // Redash's original KB taxonomy. Keep the old URLs alive.
+        redirects: [
+          {from: '/user-guide/getting-started', to: '/start/first-steps'},
+          {from: '/self-hosted/setup', to: '/administer/self-hosted-setup'},
+          {from: '/self-hosted/admin-guide', to: '/administer'},
+          {from: '/self-hosted/dev-guide', to: '/develop'},
+          {from: '/data-sources/supported-data-sources', to: '/connect'},
+          {from: '/fanar', to: '/ask'},
+          {from: '/fanar/agent', to: '/ask/chat'},
+          {from: '/fanar/agent-memory', to: '/ask/conversations'},
+          {from: '/fanar/development', to: '/develop/local-setup'},
+          {from: '/fanar/langsmith', to: '/develop/langfuse'},
+          {from: '/fanar/multi-org', to: '/administer/multi-org'},
+          {from: '/user-guide/semantic-layer', to: '/ask/semantic-layer'},
+        ],
+        createRedirects(existingPath: string) {
+          // Whole subtrees that moved without changing their leaf paths.
+          const moves: Array<[string, string[]]> = [
+            ['/build/', ['/user-guide/']],
+            ['/administer/users/', ['/user-guide/users/']],
+            ['/ask/semantic-layer/', ['/user-guide/semantic-layer/']],
+            ['/connect/', ['/data-sources/']],
+            ['/administer/', ['/self-hosted/admin-guide/']],
+            ['/develop/', ['/self-hosted/dev-guide/', '/user-guide/integrations-and-api/']],
+          ];
+          for (const [prefix, olds] of moves) {
+            if (existingPath.startsWith(prefix)) {
+              return olds.map((old) => old + existingPath.slice(prefix.length));
+            }
+          }
+          return undefined;
+        },
+      },
+    ],
+  ],
 
   presets: [
     [
@@ -68,7 +110,7 @@ const config: Config = {
           label: 'Documentation',
         },
         {
-          href: 'https://github.com/lionjashari/fanar',
+          href: 'https://github.com/Fanar-Analytics-Demo/fanar',
           label: 'Fanar App',
           position: 'right',
         },
@@ -83,31 +125,31 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Documentation',
+          title: 'Get started',
           items: [
-            {label: 'Getting Started', to: '/'},
-            {label: 'User Guide', to: '/user-guide/getting-started'},
-            {label: 'Self-Hosted', to: '/self-hosted/setup'},
+            {label: 'Your first 10 minutes', to: '/start/first-steps'},
+            {label: 'Core concepts', to: '/start/concepts'},
+            {label: 'Connect your data', to: '/connect'},
           ],
         },
         {
-          title: 'Fanar',
+          title: 'Ask Fanar',
           items: [
-            {label: 'Application', href: 'https://github.com/lionjashari/fanar'},
-            {label: 'AI Agent', to: '/fanar/agent'},
+            {label: 'Chat', to: '/ask/chat'},
+            {label: 'Teaching Fanar your business', to: '/ask/teaching-fanar'},
+            {label: 'Semantic layer', to: '/ask/semantic-layer'},
           ],
         },
         {
-          title: 'Attribution',
+          title: 'More',
           items: [
-            {
-              label: 'Redash (source docs)',
-              href: 'https://github.com/getredash/website',
-            },
+            {label: 'Administer', to: '/administer'},
+            {label: 'Develop', to: '/develop'},
+            {label: 'Attribution', to: '/reference/attribution'},
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Fanar. Documentation adapted from Redash (BSD-2-Clause). Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Fanar. Built on Redash (BSD-2-Clause). Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
