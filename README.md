@@ -59,7 +59,8 @@ page, add a redirect.
 
 The long-term documentation plan is in
 [DOCS-PLAN.md](./DOCS-PLAN.md); the page-by-page asset worklist is in
-[DOCS-PHASE-2-WORKLIST.md](./DOCS-PHASE-2-WORKLIST.md).
+[DOCS-PHASE-2-WORKLIST.md](./DOCS-PHASE-2-WORKLIST.md), and the capture-by-capture
+shot list is in [DOCS-SHOT-LIST.md](./DOCS-SHOT-LIST.md).
 
 ## License
 
