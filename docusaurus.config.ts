@@ -92,7 +92,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'img/docusaurus-social-card.jpg',
     colorMode: {
       respectPrefersColorScheme: true,
     },
@@ -149,7 +148,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Fanar. Built on Redash (BSD-2-Clause). Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Fanar. Built on Redash (BSD-2-Clause).`,
     },
     prism: {
       theme: prismThemes.github,
