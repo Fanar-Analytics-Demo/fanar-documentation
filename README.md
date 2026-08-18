@@ -57,8 +57,9 @@ page, add a redirect.
   inherited screenshots of a different product. Replacing them is tracked in
   [DOCS-PLAN.md](./DOCS-PLAN.md).
 
-The long-term documentation plan, including the video and screenshot work, is in
-[DOCS-PLAN.md](./DOCS-PLAN.md).
+The long-term documentation plan is in
+[DOCS-PLAN.md](./DOCS-PLAN.md); the page-by-page asset worklist is in
+[DOCS-PHASE-2-WORKLIST.md](./DOCS-PHASE-2-WORKLIST.md).
 
 ## License
 
