@@ -1,6 +1,10 @@
-<svg width="72" height="82" viewBox="0 0 72 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M36 4V78" stroke="#E8610A" stroke-width="8" stroke-linecap="round"/>
-<path d="M20 20H52" stroke="#E8610A" stroke-width="8" stroke-linecap="round"/>
-<path opacity="0.7" d="M12 40H60" stroke="#E8610A" stroke-width="8" stroke-linecap="round"/>
-<path opacity="0.4" d="M4 60H68" stroke="#E8610A" stroke-width="8" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="70 45 310 310">
+  <!-- Short bar -->
+  <rect x="190" y="110" width="120" height="40" rx="20" fill="#F05A00"/>
+  <!-- Middle bar -->
+  <rect x="120" y="180" width="190" height="40" rx="20" fill="#F58A5A"/>
+  <!-- Long bar -->
+  <rect x="80" y="250" width="230" height="40" rx="20" fill="#F8B99A"/>
+  <!-- Offset vertical bar; intentionally separated from the horizontal bars -->
+  <rect x="330" y="70" width="40" height="260" rx="20" fill="#F05A00"/>
 </svg>
